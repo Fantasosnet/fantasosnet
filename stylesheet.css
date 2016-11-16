@@ -36,3 +36,16 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.rainborder {
+	animation-name: rain;
+	animation-duration: 0.5s;
+	border: 3px solid;
+	box-shadow: 0 0 20px;
+	animation-iteration-count: infinite;
+}
+@keyframes rain {
+	0%   {border-color: red; box-shadow: 0 0 20px green;}
+    25%  {border-color: yellow; box-shadow: 0 0 20px blue;}
+    50%  {border-color: blue; box-shadow: 0 0 20px yellow;}
+    100% {border-color: green; box-shadow: 0 0 20px red;}
+}

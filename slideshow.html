@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ictstylesheet.css"/>
+<title>Slideshow</title>
+</head>
+<body>
+<div class="h">​ Slideshow</div>
+<div style="max-width:1000px;margin:auto">
+  <img class="s" src="http://cdn.gamer-network.net/2012/articles/1/5/2/2/4/9/1/135100555098.jpg" style="width:100%">
+  <img class="s" src="https://www.lpainc.com/content/project/13_de554fd7cfd3e055023b28e2ed76fd26_full.jpg" style="width:100%">
+  <img class="s" src="https://s-media-cache-ak0.pinimg.com/originals/15/ba/12/15ba12d78cf42cdc17d0ecae958d532b.jpg" style="width:100%">
+  <img class="s" src="http://www.letstalkvideogames.com/wp-content/uploads/2011/01/Blizzard-6.jpg" style="width:100%">
+  <img class="s" src="https://thechive.files.wordpress.com/2012/05/blizzard-entertainment-headquarters-offices-9.jpg?quality=85&strip=info&w=500" style="width:100%">
+  <img class="s" src="https://s3-us-west-1.amazonaws.com/shacknews/assets/editorial/2016/10/overwatch-4k.0.jpg" style="width:100%">
+  <img class="s" src="http://warcraft.blizzplanet.com/wp-content/uploads/2016/01/blizzcon-2015-world-of-warcraft-cinematics-panel-transcript-00030.jpg" style="width:100%">
+  <img class="s" src="http://cdn.blizzcon2016.com/wp-content/uploads/2015/03/blizzcon-costume-wallpaper-2560x1440.jpg" style="width:100%">
+</div>
+<a class="b" href="ictindex.html">Takaisin aloitussivulle</a>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("s");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+</script>
+</body>
+</html>
