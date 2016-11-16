@@ -1,0 +1,38 @@
+* {
+	font-family: "Open Sans",sans-serif;
+	color: white;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+	background: gray url("https://i.imgur.com/bB4L1r9.png") no-repeat left top;
+	background-size:cover;
+}
+.w1 {
+	position: relative;
+	height: 115px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.h {
+	font-size: 70px;
+	font-weight: 600;
+	font-style: italic;
+	position: absolute;
+	line-height: 115px;
+	text-indent: 2vw;
+}
+.w2 {
+	text-align: center;
+	margin-top: 10vw;
+}
+.l {
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 25px;
+	display: inline-block;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
