@@ -15,12 +15,6 @@ body {
 	position: relative;
 	height: 115px;
 	background-color: rgba(0, 0, 0, 0.7);
-	filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-	-ms-filter: blur(10px);
- 	filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='svgMask'><feGaussianBlur stdDeviation='10' /></filter></svg>#svgMask");
 }
 .h {
 	font-size: 70px;
@@ -50,7 +44,7 @@ body {
 	animation-iteration-count: infinite;
 }
 @keyframes rain {
-	0%   {border-color: red; box-shadow: 0 0 20px green;}
+		0%  {border-color: red; box-shadow: 0 0 20px green;}
     25%  {border-color: yellow; box-shadow: 0 0 20px blue;}
     50%  {border-color: blue; box-shadow: 0 0 20px yellow;}
     100% {border-color: green; box-shadow: 0 0 20px red;}
