@@ -7,10 +7,11 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-		overflow-x: hidden;
-		background: gray url("https://i.imgur.com/bB4L1r9.png") no-repeat left top;
-		background-size:cover;
-	-webkit-filter: blur(10px);
+    overflow-x: hidden;
+}
+bg {
+    position: absolute;
+    -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
