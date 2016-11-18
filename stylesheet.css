@@ -1,5 +1,5 @@
 :root {
-	--bg-img: url("https://i.imgur.com/bB4L1r9.png");
+	--bg-img: url("https://cdn2.artstation.com/p/assets/images/images/001/558/054/large/yuliya-zabelina-enigma.jpg?1448522878");
 }
 * {
 	font-family: "Open Sans",sans-serif;
@@ -39,16 +39,33 @@ body {
 	text-indent: 2vw;
 }
 .w2 {
+	margin-top: 5vw;
 	text-align: center;
-	margin-top: 10vw;
+}
+.w2b {
+	background: var(--bg-img) no-repeat fixed;
+	width: 300px;
+	height: 54px;
+	overflow: hidden;
+	filter: blur(15px);
+	margin: auto;
+}
+.b1 {
+	background-position: 52% 18%;
+}
+.b2 {
+	background-position: 52% 28%;
+	width: 288px;
 }
 .l {
 	background-color: rgba(0, 0, 0, 0.7);
 	font-size: 25px;
 	display: inline-block;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	bottom: 55px;
 }
 .rainborder {
 	animation-name: rain;
