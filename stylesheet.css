@@ -1,5 +1,5 @@
 :root {
-	--bg-img: url("https://cdn2.artstation.com/p/assets/images/images/001/558/054/large/yuliya-zabelina-enigma.jpg?1448522878");
+	--bg-img1: url("https://cdn2.artstation.com/p/assets/images/images/001/558/054/large/yuliya-zabelina-enigma.jpg?1448522878");
 }
 * {
 	font-family: "Open Sans",sans-serif;
@@ -11,11 +11,13 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-	background: gray var(--bg-img) no-repeat left top;
+	background: gray var(--bg-img1) no-repeat left top;
 	background-size:cover;
+	animation-name: slide;
+	animation-duration: 10s;
 }
 .w1b {
-	background: gray var(--bg-img) no-repeat left top;
+	background: gray var(--bg-img1) no-repeat left top;
 	position: relative;
 	background-size:cover;
 	height: 135px;
@@ -41,11 +43,12 @@ body {
 .w2 {
 	margin-top: 5vw;
 	text-align: center;
+	max-height: 54px;
 }
-.w2b {
-	background: var(--bg-img) no-repeat fixed;
-	width: 300px;
-	height: 54px;
+.w2b1 {
+	background: var(--bg-img1) no-repeat fixed;
+	width: 317px;
+	height: 62px;
 	overflow: hidden;
 	filter: blur(15px);
 	margin: auto;
@@ -53,11 +56,19 @@ body {
 .b1 {
 	background-position: 52% 18%;
 }
+.w2b2 {
+	background: var(--bg-img1) no-repeat fixed;
+	width: 317px;
+	height: 58px;
+	overflow: hidden;
+	filter: blur(15px);
+	margin: auto;
+}
 .b2 {
 	background-position: 52% 28%;
-	width: 288px;
+	width: 309px;
 }
-.l {
+.l1 {
 	background-color: rgba(0, 0, 0, 0.7);
 	font-size: 25px;
 	display: inline-block;
@@ -66,6 +77,18 @@ body {
 	padding-right: 30px;
 	position: relative;
 	bottom: 55px;
+	margin-top: -8px;
+}
+.l2 {
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 25px;
+	display: inline-block;
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	bottom: 55px;
+	margin-top: -3px;
 }
 .rainborder {
 	animation-name: rain;
